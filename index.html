@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio | Web Developer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #007BFF;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 5px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    #home {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    #home img {
+      width: 250px;
+      border-radius: 50%;
+      border: 5px solid #007BFF;
+      margin-top: 20px;
+    }
+    #home .intro {
+      flex: 1;
+      padding: 20px;
+    }
+    #home h2 {
+      font-size: 2rem;
+      color: #007BFF;
+    }
+    #about, #projects, #contact {
+      background: white;
+      margin: 20px 0;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin-bottom: 20px;
+      color: #007BFF;
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .project-card {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      transition: transform 0.3s;
+    }
+    .project-card:hover {
+      transform: scale(1.05);
+    }
+    .contact-info p {
+      margin: 10px 0;
+    }
+    form input, form textarea, form button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    form button {
+      background: #007BFF;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    form button:hover {
+      background: #0056b3;
+    }
+    footer {
+      text-align: center;
+      background: #007BFF;
+      color: white;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home">
+    <div class="intro">
+      <h2>Hello, I'm Kavya</h2>
+      <p>A passionate <strong>Web Developer</strong> skilled in creating responsive and dynamic web applications.  
+      I specialize in HTML, CSS, JavaScript, and modern frameworks.</p>
+    </div>
+    <img src="https://via.placeholder.com/250" alt="Profile Photo">
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a dedicated web developer with a strong foundation in front-end and back-end technologies.  
+      I have completed my education in [Your Education Details].  
+      My professional experience includes building websites, web apps, and working with teams to deliver high-quality projects.  
+    </p>
+    <p><strong>Skills:</strong> HTML, CSS, JavaScript, React, Node.js, Git, Responsive Design</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Project 1</h3>
+        <p>A responsive e-commerce website built with HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project 2</h3>
+        <p>Portfolio website showcasing skills and experience with interactive design.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project 3</h3>
+        <p>Weather app that fetches real-time data using APIs and displays forecasts.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-info">
+      <p><strong>Email:</strong> yourname@email.com</p>
+      <p><strong>Phone:</strong> +91-1234567890</p>
+      <p><strong>Location:</strong> Your City, India</p>
+    </div>
+    <form>
+      <input type="text" placeholder="Your name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Portfolio | Designed with ❤️</p>
+  </footer>
+</body>
+</html>
